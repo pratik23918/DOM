@@ -1,0 +1,49 @@
+Properties:
+->innerHTML
+->Style
+->firstchild
+Method:
+->click();
+->setAttributes();
+document.getfirstelement();
+
+// selecting html elements using javascript
+document.getElementsByTagName('P');
+document.querySelector("li a").style.color="red";
+document.querySelectorAll("#list .item");
+This will return the all elements under the list and the class item 
+in the form of an array and to extrct it , we write in the 
+form of an "[]";
+
+document.querySelectorAll("#list .item")[2].style.color="blue";
+Note: 
+1. In javascript every property should be in the cameCase
+2. the value assigned should be within the double quotation i.e. in th form of string
+Concept of class list
+document.querySelector("h1').classList.add("huge");
+The classList is a property of DOM elements in JavaScript that provides an interface for managing the classes assigned to an element. It is part of the DOM specification and is widely supported in modern browsers. The classList property is particularly useful for dynamically manipulating the classes of an element.
+
+The classList property provides several methods for adding, removing, toggling, and checking the existence of CSS classes on an element. Here are some commonly used methods:
+Concept of innerHtml and textContent
+Key differences:
+
+textContent deals only with text content and does not interpret HTML. It provides a safer way to handle user-generated content as it doesn't execute scripts or render HTML tags.
+
+innerHTML can be used to manipulate both text and HTML content, but it comes with a potential security risk if you are inserting user-generated content. Improper use of innerHTML with untrusted content may lead to cross-site scripting (XSS) vulnerabilities.
+
+In general, when dealing with text content, and especially when working with user input, it's often safer to use textContent to avoid unintentional HTML interpretation and potential security issues. Use innerHTML when you specifically need to work with HTML content and are aware of the potential risks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
